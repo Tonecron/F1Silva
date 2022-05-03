@@ -50,7 +50,7 @@
 
 html{
     font-size: 62%;
-    overflow: hidden;
+    overflow: scroll;
 
 }
 
@@ -125,20 +125,92 @@ header label{
     background-position: center;
 }
 
+.inicio2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/Ferrari/_jcr_content/gallery/image1.img.1920.medium.jpg/1647107707871.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/gallery/image5.img.1920.medium.jpg/1646932821739.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio4  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/McLaren/_jcr_content/gallery/image4.img.1920.medium.jpg/1646932823104.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio5  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/Alfa-Romeo-Racing/_jcr_content/gallery/image1.img.1920.medium.jpg/1647088906995.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.inicio6  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/Aston-Martin/_jcr_content/gallery/image2.img.1920.medium.jpg/1647107385951.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio7  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/AlphaTauri/_jcr_content/gallery/image1.img.1920.medium.jpg/1647107383853.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio8  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/Alpine/_jcr_content/gallery/image3.img.1920.medium.jpg/1647107707524.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio9  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/Williams/_jcr_content/gallery/image2.img.1920.medium.jpg/1647107385013.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio10  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.formula1.com/content/fom-website/en/teams/Haas-F1-Team/_jcr_content/gallery/image1.img.1920.medium.jpg/1647007443268.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .inicio .image img{
     width: 40vw;
     animation: float 3s linear infinite;
 
-}
-
-@keyframes float{
-0%, 100%{
-    transform: translateY(0rem);
-}
-50%{
-    transform: translateY(-3.5rem);
-}
 }
 
 .inicio .content{
@@ -156,10 +228,231 @@ header label{
 
 .inicio .content p{
     font-size: 1.7rem;
-    color: #666;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.inicio2 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio2 .content2{
+    font-size: 5.5rem;
+    color: rgb(251, 255, 0);
+    text-transform: uppercase;
+
+}
+
+.inicio2 .content2 h3 span{
+    color: rgb(182, 0, 0);
+
+}
+
+.inicio2 .content2 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
     padding: 1rem 0;
 }
  
+.inicio3 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio3 .content3{
+    font-size: 5.5rem;
+    color: rgb(143, 143, 143);
+    text-transform: uppercase;
+
+}
+
+.inicio3 .content3 h3 span{
+    color: rgb(182, 0, 0);
+
+}
+
+.inicio3 .content3 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.inicio4 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio4 .content4{
+    font-size: 5.5rem;
+    color: rgb(255, 136, 0);
+    text-transform: uppercase;
+
+}
+
+.inicio4 .content4 h3 span{
+    color: rgb(0, 181, 253);
+
+}
+
+.inicio4 .content4 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.inicio5 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio5 .content5{
+    font-size: 5.5rem;
+    color: rgb(187, 0, 0);
+    text-transform: uppercase;
+}
+
+.inicio5 .content5 h3 span{
+    color: rgb(255, 255, 255);
+
+}
+
+.inicio5 .content5 p{
+    font-size: 1.7rem;
+    color: rgb(173, 173, 173);
+    padding: 1rem 0;
+}
+
+.inicio6 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio6 .content6{
+    font-size: 5.5rem;
+    color: rgb(0, 168, 104);
+    text-transform: uppercase;
+}
+
+.inicio6 .content6 h3 span{
+    color: rgb(0, 168, 104);
+
+}
+
+.inicio6 .content6 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.inicio7 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio7 .content7{
+    font-size: 5.5rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.inicio7 .content7 h3 span{
+    color: rgb(0, 39, 148);
+
+}
+
+.inicio7 .content7 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.inicio8 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio8 .content8{
+    font-size: 5.5rem;
+    color: rgb(0, 48, 180);
+    text-transform: uppercase;
+}
+
+.inicio8 .content8 h3 span{
+    color: rgb(219, 0, 146);
+
+}
+
+.inicio8 .content8 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.inicio9 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio9 .content9{
+    font-size: 5.5rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.inicio9 .content9 h3 span{
+    color: rgb(0, 110, 212);
+
+}
+
+.inicio9 .content9 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.inicio10 .image img{
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+.inicio10 .content10{
+    font-size: 5.5rem;
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+}
+
+.inicio10 .content10 h3 span{
+    color: rgb(255, 255, 255);
+
+}
+
+.inicio10 .content10 p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+@keyframes float{
+0%, 100%{
+    transform: translateY(0rem);
+}
+50%{
+    transform: translateY(-3.5rem);
+}
+}
+
+
+
 .detalles .caja-contenedora{
     display: flex;
     align-items: center;
@@ -393,4 +686,11 @@ header label{
         margin: 1rem 0;
 
     }
+}
+
+.separador {
+    
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(4, 0, 59);
 }
