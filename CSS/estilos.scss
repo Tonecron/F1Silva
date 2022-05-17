@@ -89,6 +89,7 @@ header .logo{
 
 }
 
+
 header .logo span{
 color: #ff0000;
 
@@ -118,95 +119,72 @@ header label{
     opacity: 0;
 }
 
-.inicio{
+@mixin ReglasInicio {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/RedBull\ RB18.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+
+}
+
+.inicio{
+    @include ReglasInicio();
+    background:url(../img/RedBull\ RB18.jpg) no-repeat;
 }
 
 .inicio2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(https://www.formula1.com/content/fom-website/en/teams/Ferrari/_jcr_content/gallery/image1.img.1920.medium.jpg/1647107707871.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include ReglasInicio();
+    background:url(https://www.formula1.com/content/fom-website/en/teams/Ferrari/_jcr_content/gallery/image1.img.1920.medium.jpg/1647107707871.jpg) no-repeat;
 }
 
 .inicio3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/gallery/image5.img.1920.medium.jpg/1646932821739.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .inicio4  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/McLaren/_jcr_content/gallery/image4.img.1920.medium.jpg/1646932823104.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .inicio5  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/Alfa-Romeo-Racing/_jcr_content/gallery/image1.img.1920.medium.jpg/1647088906995.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 
 }
 
 .inicio6  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/Aston-Martin/_jcr_content/gallery/image2.img.1920.medium.jpg/1647107385951.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .inicio7  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/AlphaTauri/_jcr_content/gallery/image1.img.1920.medium.jpg/1647107383853.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .inicio8  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/Alpine/_jcr_content/gallery/image3.img.1920.medium.jpg/1647107707524.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .inicio9  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/Williams/_jcr_content/gallery/image2.img.1920.medium.jpg/1647107385013.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .inicio10  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include ReglasInicio();
     background: url(https://www.formula1.com/content/fom-website/en/teams/Haas-F1-Team/_jcr_content/gallery/image1.img.1920.medium.jpg/1647007443268.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .inicio .image img{
@@ -579,6 +557,148 @@ header label{
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+
+.precios .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.precios .caja-contenedor .caja{
+    flex: 1 1 28rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+
+}
+
+
+.precios .caja-contenedor .caja:hover{
+    border: .2rem solid $color1
+
+}
+
+.precios .caja-contenedor .caja .titulo{
+    color: $color2;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.precios .caja-contenedor .caja .tipos{
+    font-size: 4rem;
+    color: black;
+    padding: 1rem 0;
+
+}
+
+.precios .caja-contenedor .caja .tipos span{
+    font-size: 2rem;
+}
+
+.precios .caja-contenedor .caja ul{
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.precios .caja-contenedor .caja ul li{
+    font-size: 1.7rem;
+    color: #333;
+    padding: .5rem 0;
+
+}
+
+.precios .caja-contenedor .caja ul li .fa-check{
+    color: lightgreen;   
+}
+
+.precios .caja-contenedor .caja ul li .fa-times{
+    color: red;
+}
+
+.contactos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    
+}
+
+.contactos .image{
+    flex: 1 1 40rem;
+}
+
+.contactos .image img{
+    width: 100%;
+    padding: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.contactos form{
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: white;
+}
+
+.contactos .cabeza{
+    text-align: left;
+    padding: 0;
+    padding-bottom: 2rem;
+    
+}
+
+.contactos form .inputcaja{
+    position: relative ;
+
+}
+
+.contactos form .inputcaja input, .contactos form .inputcaja textarea{
+    width: 100%;
+    background: none;
+    color: #333;
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+
+}
+
+.contactos form .inputcaja textarea{
+    resize: none;
+    height: 13rem;
+
+}
+
+.contactos form .inputcaja label{
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    transition: .2 linear;
+
+}
+
+.contactos form .inputcaja input:focus ~ label,
+.contactos form .inputcaja input:valid ~ label,
+.contactos form .inputcaja textarea:focus ~ label,
+.contactos form .inputcaja textarea:valid ~ label{
+    top:-.5rem;
+    font-size: 1.5rem;
+    color: $color1;
 }
 
 @media (min-width: 600px) {
